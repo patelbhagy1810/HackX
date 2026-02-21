@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #020409;
+  color: #e8edf5;
+  font-family: 'Barlow', sans-serif;
+}
+
+.font-mono { font-family: 'Share Tech Mono', monospace !important; }
+
+/* Leaflet dark map fix */
+.leaflet-container { background: #0f172a; }
+.leaflet-tile-pane { filter: brightness(0.9) contrast(1.05); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
